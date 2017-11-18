@@ -1,0 +1,237 @@
+/*body p{
+	font-family: 'Annie Use Your Telescope', cursive;
+}*/
+
+
+body p{
+	font-family: 'ACaslon-Pro';
+}
+.little-about-us{
+	padding-top: 90px;
+	/*width: 550px;*/
+	
+}
+
+.section-one .container{
+	padding-left: 200px;
+}
+.section-one .our-story{
+	font-family: 'ACaslon-Pro';
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #003f55;
+	line-height: 18px;
+}
+
+.section-one .little-about-us-header{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 50px;
+	color: #003f55;
+	line-height: 56px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+}
+
+.little-about-us p{
+	font-size: 17px;
+	line-height: 23px;
+	color: #003f55;
+	padding: 12px 0px;
+	letter-spacing: 0.4px;
+}
+a:hover{
+	outline: 0 !important; 
+	text-decoration: none !important;
+}
+.little-about-us a{
+	width: 270px;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	color: #fba934;
+	border:1px solid #fba934;
+	height: 48px;
+	display: block;
+	text-align: center;
+	border-radius: 18px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	text-decoration: none; 
+}
+.little-about-us a:hover{
+	color: #fba934;
+}
+.why-choose-us .single-block{
+	text-align: center;
+}
+
+.why-choose-us{
+	width: 890px;
+}
+.why-choose-us .single-block p{
+	font-size: 17px;
+	line-height: 23px;
+	color: #003f55;
+	padding: 12px 0px;
+	letter-spacing: 0.4px;
+}
+.upper-container{
+	padding-left: 270px;
+	clear: both;
+}
+.lower-container{
+	clear: both;
+}
+.little-about-us-content{
+	width: 50%;
+	float: left;
+}
+.pool-img{
+	width: 50%;
+	float: left;
+}
+.pool-img img{
+	width: 100%;
+}
+.dog-img img{
+	width: 100%;
+}
+.dog-img{
+	width: 250px;
+	float: left
+}
+.why-choose-us{
+	float: left;
+}
+
+.section-two{
+	background-image: url("images/blue-background.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-top: -90px;
+	position: relative;
+	/*padding-bottom: 200px;*/
+}
+.section-two .facilities{
+	font-family: 'ACaslon-Pro';
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #003f55;
+	line-height: 18px;
+	text-align: right;
+	padding-top: 120px;
+}
+.section-two .what-we-offer{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 50px;
+	color: #003f55;
+	line-height: 56px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	text-align: right;
+}
+
+.offer-blocks .cover{
+	width: 100%;
+}
+.offer-blocks{
+	position: relative !important;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.block-content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	justify-content: center;
+    align-self: center;
+    display: flex;
+}
+
+.block-content p{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 50px;
+	color: #ffffff;
+	line-height: 56px;
+	text-transform: capitalize;
+	
+}
+.block-content .content{
+	text-align: center;
+    align-self: center;
+   
+}
+.bottom-cat{
+	text-align: center;
+}
+.bottom-cat img{
+	margin-bottom: -40px;
+}
+
+.section-three{
+	background-color: #a04c88;
+	padding-top: 190px;
+	margin-top: -140px;
+}
+.section-three .the-pawfeet-journal{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 50px;
+	color: #ffffff;
+	line-height: 56px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	
+}
+.section-three .blog{
+	font-family: 'ACaslon-Pro';
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	line-height: 18px;
+}
+
+.section-three .owl-carousel{
+	display: block !important;
+}
+.blog-carousel .item{
+	overflow: hidden;
+}
+.blog-carousel .read-more{
+	background-color: #fbbe34;
+	height: 0px;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+    z-index: 100;
+    width: 100%;
+}
+.blog-carousel .read-more a{
+	color: #ffffff;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 30px;
+}
+.blog-info-area{
+	width: 100%;
+	height: 250px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0px;
+	display: block;
+}
+.pseudo{
+	content: '';
+	width: 100%;
+	display: block;
+	height: 50px;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	background-color: #ffffff;
+	position: absolute;
+	top: 250px;
+}
