@@ -14,7 +14,7 @@
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
-
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Latest compiled JavaScript -->
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
@@ -122,6 +122,14 @@
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<div class="blog-info-area">
+							<div class="share-section">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+								<div class="sharing-icons">
+								<i class="fa fa-facebook share-logo" aria-hidden="true"></i>
+								<i class="fa fa-twitter share-logo" aria-hidden="true"></i>
+								<i class="fa fa-envelope share-logo" aria-hidden="true"></i>
+								</div>
+							</div>
 						</div>
 						<div class="pseudo">
 						</div>
@@ -132,6 +140,14 @@
 					</div>
 					<div class="item">
 						<div class="blog-info-area">
+							<div class="share-section">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+								<div class="sharing-icons">
+								<i class="fa fa-facebook share-logo" aria-hidden="true"></i>
+								<i class="fa fa-twitter share-logo" aria-hidden="true"></i>
+								<i class="fa fa-envelope share-logo" aria-hidden="true"></i>
+								</div>
+							</div>
 						</div>
 						<div class="pseudo">
 						</div>
@@ -142,6 +158,14 @@
 					</div>
 					<div class="item">
 						<div class="blog-info-area">
+							<div class="share-section">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+								<div class="sharing-icons">
+								<i class="fa fa-facebook share-logo" aria-hidden="true"></i>
+								<i class="fa fa-twitter share-logo" aria-hidden="true"></i>
+								<i class="fa fa-envelope share-logo" aria-hidden="true"></i>
+								</div>
+							</div>
 						</div>
 						<div class="pseudo">
 						</div>
@@ -152,6 +176,14 @@
 					</div>
 					<div class="item">
 						<div class="blog-info-area">
+							<div class="share-section">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+								<div class="sharing-icons">
+								<i class="fa fa-facebook share-logo" aria-hidden="true"></i>
+								<i class="fa fa-twitter share-logo" aria-hidden="true"></i>
+								<i class="fa fa-envelope share-logo" aria-hidden="true"></i>
+								</div>
+							</div>
 						</div>
 						<div class="pseudo">
 						</div>
@@ -172,7 +204,7 @@
 	
 $(document).ready(function(){
 $('.owl-carousel').owlCarousel({
-    loop:true,
+    loop:false,
     margin:30,
     nav:true,
     responsive:{
@@ -203,5 +235,15 @@ $(".item").hover(function() {
 },function() {
     $(this).children(".blog-info-area").animate({"height":"250px"},500);
     $(this).children(".pseudo").animate({"top":"250px"},500);
+});
+
+$(".share-section").hover(function() {
+    $(this).animate({"height":"150px","width":"150px","top":"-55px","right":"-55px"},500);
+     $(this).children(".fa.fa-share-alt").animate({"top":"70px","right":"70px"},500);
+    $(this).children(".sharing-icons").show();
+},function() {
+    $(this).animate({"height":"60px","width":"60px","top":"-20px","right":"-20px"},500);
+     $(this).children(".fa.fa-share-alt").animate({"top":"30px","right":"30px"},500);
+    $(this).children(".sharing-icons").hide();
 });
 </script>
