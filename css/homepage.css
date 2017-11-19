@@ -177,6 +177,7 @@ a:hover{
 	background-color: #a04c88;
 	padding-top: 190px;
 	margin-top: -140px;
+	
 }
 .section-three .the-pawfeet-journal{
 	font-family: 'Annie Use Your Telescope', cursive;
@@ -187,6 +188,10 @@ a:hover{
 	margin-bottom: 35px;
 	
 }
+
+/*.owl-theme .owl-nav [class*=owl-]{
+	background: transparent !important;
+}*/
 .section-three .blog{
 	font-family: 'ACaslon-Pro';
 	font-size: 12px;
@@ -198,6 +203,30 @@ a:hover{
 
 .section-three .owl-carousel{
 	display: block !important;
+	position: relative;
+}
+
+.section-three .owl-prev{
+	background: url(images/prev-arrow.png) !important;
+	height: 46px;
+	width: 46px;
+	position: absolute;
+	left: -60px;
+	font-size: 0px !important;
+}
+.section-three .owl-next{
+	background: url(images/next-arrow.png) !important;
+	height: 46px;
+	width: 46px;
+	position: absolute;
+	right: -60px;
+	font-size: 0px !important;
+}
+
+.section-three .owl-theme .owl-nav{
+	position: absolute;
+	top: -webkit-calc(50% - 46px);  
+	width: 100%;   
 }
 .blog-carousel .item{
 	overflow: hidden;
@@ -215,10 +244,12 @@ a:hover{
 	color: #ffffff;
 	font-family: 'Annie Use Your Telescope', cursive;
 	font-size: 30px;
+	display: block;
+    margin-top: 5px;
 }
 .blog-info-area{
 	width: 100%;
-	height: 200px;
+	height: 240px;
 	background-color: #ffffff;
 	position: absolute;
 	top: 0px;
@@ -249,7 +280,7 @@ a:hover{
 	border-bottom-right-radius: 50%;
 	background-color: #ffffff;
 	position: absolute;
-	top: 200px;
+	top: 240px;
 }
 .fa{
 	color: #003f55;
@@ -272,14 +303,299 @@ a:hover{
 .sharing-icons{
 	display: none;
 }
-.fa-facebook{
+.share-section .fa-facebook{
 	top: 40px;
 }
-.fa-twitter{
+.share-section .fa-twitter{
 	top: 75px;
 	right: 30px;
 }
-.fa-envelope{
+.share-section .fa-envelope{
 	    top: 96px;
     left: -35px;
 }
+.blog-carousel .owl-dots{
+	display: none;
+}
+
+.view-all-blogs{
+	width: 270px;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	color: #fba934;
+	border:1px solid #fba934;
+	height: 48px;
+	display: block;
+	text-align: center;
+	border-radius: 18px;
+	margin:60px auto;
+	text-decoration: none; 
+}
+.view-all-blogs:hover{
+	color: #fba934;
+}
+.blog-text-content{
+	text-align: left;
+	padding: 30px 20px;
+}
+.blog-text-content .date{
+	font-size: 17px;
+	line-height: 23px;
+	color: #003f55;
+	padding: 12px 0px;
+	display: block;
+	letter-spacing: 0.4px;
+}
+.blog-text-content .title{
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	color: #003f55;
+	margin:0px;
+}
+
+.blog-text-content .description{
+	font-size: 17px;
+	line-height: 23px;
+	color: #003f55;
+	padding: 40px 0px;
+	letter-spacing: 0.4px;
+}
+
+.blog-carousel .item:hover{
+	cursor: pointer;
+}
+
+.section-four{
+	height: 982px;
+	background-image: url(images/pink-background.png);
+	background-size: 100% 100%;
+
+}
+.owl-carousel .owl-item img{
+	width: initial !important;
+}
+.section-four .client-talks{
+	font-family: 'ACaslon-Pro';
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #003f55;
+	line-height: 18px;
+	text-align: right;
+	padding-top: 120px;
+}
+.section-four .happy-customers{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 50px;
+	color: #003f55;
+	line-height: 56px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	text-align: right;
+}
+.upper-block{
+	text-align: center;
+}
+.profile-pic{
+	display: inline-block !important;
+	border-radius: 50%;
+	box-shadow:-20px 22px 28px 7px #dcd9d9;
+}
+.customer-data{
+	display: inline-block;
+}
+.testimonial-carousel{
+	width: 830px;
+	margin:0 auto;
+}
+.section-four .owl-prev{
+	background: url(images/prev-arrow.png) !important;
+	height: 46px;
+	width: 46px;
+	font-size: 0px !important;
+}
+.section-four .owl-next{
+	background: url(images/next-arrow.png) !important;
+	height: 46px;
+	width: 46px;
+	font-size: 0px !important;
+}
+.section-four .owl-theme .owl-nav{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.section-four .owl-theme .owl-dots{
+	display: none;
+}
+
+.testimonial-carousel .lower-block p{
+	font-size: 17px;
+	line-height: 23px;
+	color: #003f55;
+	padding: 55px 0px;
+	width: 670px;
+	text-align: center;
+	margin: 0 auto;
+	letter-spacing: 0.4px;
+}
+.upper-block .customer-data{
+	padding-left: 25px;
+	text-align: left;
+}
+.upper-block .customer-data .company{
+	font-family: 'ACaslon-Pro';
+	font-size: 17px;
+	color: #003f55;
+	font-style: italic;
+	text-transform: capitalize;
+}
+.upper-block .customer-data .name{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 30px;
+	color: #003f55;
+	text-transform: capitalize;
+}
+.lower-block{
+	position: relative;
+}
+.lower-block:after{
+	content: '';
+	background-image: url(images/close-quotes.png);
+	width: 46px;
+	height: 40px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.lower-block:before{
+	content: '';
+	background-image: url(images/open-quotes.png);
+	width: 46px;
+	height: 40px;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+.section-five{
+	background-color: #66c6e8;
+	padding-bottom: 85px;
+}
+
+.section-five .the-pawfeet-journal{
+	font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 56px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+.section-five .blog{
+	font-family: 'ACaslon-Pro';
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 18px;
+}
+
+.facts-figures .facts-figures-block{
+	text-align: center;
+}
+ .facts-figures-block .figure{
+ 	font-size: 70px;
+ 	color: #a04c88;
+ 	font-family: 'Annie Use Your Telescope', cursive;
+ }
+ .facts-figures-block .fact{
+ 	font-family: 'ACaslon-Pro';
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+ }
+ .facts-figures-block .icon{
+ 	height: 100px;
+ }
+.section-six .left-block img{
+	width: 100%;
+}
+.section-six .left-block{
+	width: 45%;
+	float: left;
+}
+.section-six .right-block{
+	float: left;
+	width: 55%;
+	padding-top: 100px;
+	padding-left: 100px;
+}
+.contact-block i, .contact-block p{
+	display: inline-block;
+}
+.contact-block .fa{
+	font-size: 40px !important;
+	color: #003f55;
+	border:1px solid #003f55;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	padding-top: 10px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.contact-block{
+	cursor: pointer;
+	margin: 20px 0;
+}
+.contact-block a{
+	font-size: 40px;
+ 	color: #003f55;
+ 	display: inline-block;
+ 	font-family: 'Annie Use Your Telescope', cursive;
+}
+.contact-block p{
+	font-size: 40px;
+ 	color: #003f55;
+ 	margin: 0px;
+ 	font-family: 'Annie Use Your Telescope', cursive;
+}
+.contact-us-button{
+	width: 270px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #fba934;
+    border: 1px solid #fba934;
+    height: 48px;
+    display: block;
+    text-align: center;
+    border-radius: 18px;
+    text-decoration: none;
+}
+.contact-us-button:visited,.contact-us-button:hover{
+	color: #fba934;
+}
+
+.contact-description h1{
+	font-size: 50px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	color: #003f55;
+	padding-top: 50px;
+	text-transform: capitalize;
+}
+
+.contact-description p{
+	font-family: 'ACaslon-Pro';
+	font-size: 17px;
+	font-weight: 400;
+	color: #003f55;
+	width: 520px;
+	padding-bottom: 30px;
+}
+
