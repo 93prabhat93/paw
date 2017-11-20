@@ -654,4 +654,186 @@ a:hover{
 	width: 520px;
 	padding-bottom: 30px;
 }
+.section-seven{
+	background-color: #a04c88;
+}
+.section-seven .facebook-block i,
+.section-seven .facebook-block .title,
+.section-seven .instagram-block i,
+.section-seven .instagram-block .title{
+	display: inline-block;
+	color: #ffffff;
+}
+.section-seven .facebook-block i, .section-seven .instagram-block i{
+	border:1px solid #ffffff;
+	padding: 5px 10px 0px;
+	border-radius: 5px;
+	font-size: 30px !important;
+}
+.section-seven .facebook-block .title,.section-seven .instagram-block .title{
+	padding-left: 10px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 30px;
+	text-transform: capitalize;
+}
+.social-media-section {
+	padding-top: 70px;
+}
+.section-seven .facebook-block .date,.section-seven .facebook-block .caption{
+	font-family: 'ACaslon-Pro';
+	font-size: 17px;
+	font-weight: 400;
+	color: #ffffff;
+}
+.section-seven .facebook-block .caption{
+	margin-bottom: 30px;
+}
+.follow-us-fb{
+	width: 270px;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	background-color: #fba934;
+	color: #ffffff;
+	border:1px solid #fba934;
+	height: 48px;
+	display: block;
+	text-align: center;
+	border-radius: 18px;
+	margin: 40px 0;
+	text-decoration: none;
+}
+.instagram-images{
+	padding-top: 30px;
+}
+.instagram-images img{
+	width: 50%;
+	float: left;
+	height: 213px;
+	object-fit: cover;
+}
+.follow-us-instagram:hover{
+	color: #fba934 !important;
+}
+.follow-us-instagram{
+	width: 270px;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	color: #fba934;
+	border:1px solid #fba934;
+	height: 48px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 18px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-decoration: none !important;
+}
+.section-eight {
+	background-image: url(images/footer-bg-image.png);
+	background-size: cover;
+	padding: 80px 0px 30px;
+	background-repeat: no-repeat;
+}
+.newsletter-block h1{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 36px;
+	color: #003f55;
+	text-transform: capitalize;
+}
+.newsletter-block p{
+	font-family: 'ACaslon-Pro';
+	font-size: 17px;
+	font-weight: 400;
+	color: #003f55;
+	padding-top: 5px;
+}
+.newsletter-block{
+	width: 380px;
+	float: left;
+}
+.email-address{
+	width: 370px;
+	border: 1px solid #033f55;
+	border-radius: 25px;
+	height: 50px;
+	font-size: 17px;
+	color: #003f55;
+	font-family: 'ACaslon-Pro';
+	padding-left: 30px;
+	outline: 0px !important;
+}
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #003f55;
+  font-family: 'ACaslon-Pro';
+font-size: 17px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+ color: #003f55;
+ font-family: 'ACaslon-Pro';
+font-size: 17px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #003f55;
+  font-family: 'ACaslon-Pro';
+font-size: 17px;
+}
+:-moz-placeholder { /* Firefox 18- */
+ color: #003f55;
+ font-family: 'ACaslon-Pro';
+font-size: 17px;
+}
+.newsletter-form{
+	position: relative;
+	padding-top: 10px;
+}
+.newsletter-form button{
+	background:none;
+	border:none;
+	position: absolute;
+	right: 5px;
+	outline: 0px;
+}
+
+.social-media-icon .fa{
+	color: #003f55;
+    display: inline-block;
+    border: 1px solid #003f55;
+    text-align: center;
+    font-size: 30px !important;
+    border-radius: 50%;
+    margin-right: 25px;
+    padding-top: 9px;
+    width: 50px;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.quick-links{
+	padding-left: 60px;
+	float: left;
+}
+.right-links{
+	padding-left: 100px;
+}
+.quick-links h1{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 36px;
+	color: #003f55;
+	text-transform: capitalize;
+}
+.left-links,.right-links{
+	float: left;
+}
+.left-links a,.right-links a{
+	display: block;
+	color: #003f55;
+ 	font-family: 'ACaslon-Pro';
+	font-size: 18px;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
