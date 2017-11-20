@@ -6,6 +6,59 @@
 body p{
 	font-family: 'ACaslon-Pro';
 }
+
+.section-zero .single-slide{
+	display: flex!important;
+	justify-content: center;
+	align-self: center;
+}
+.section-zero .slide-content{
+	align-self: center;
+	text-align: center;
+}
+
+.slide-content p{
+	font-family: 'Annie Use Your Telescope', cursive;
+	color: #ffffff;
+	font-size: 50px;
+	text-transform: capitalize;
+}
+
+.slide-content h1{
+	font-family: 'Annie Use Your Telescope', cursive;
+	color: #ffffff;
+	font-size: 170px;
+	text-transform: capitalize;
+	margin:10px;
+}
+.slide-button{
+	width: 300px;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	background-color: #fba934;
+	color: #ffffff;
+	border:1px solid #fba934;
+	height: 48px;
+	display: block;
+	text-align: center;
+	border-radius: 18px;
+	margin: 40px auto;
+	text-decoration: none;
+}
+.slide-button:hover{
+	color: #ffffff;
+}
+.section-zero .slides-navigation a.next{
+	right: 30px;
+}
+.section-zero .slides-navigation a.prev{
+	left: 30px;
+}
+.section-zero .slides-pagination{
+	display: none;
+}
 .little-about-us{
 	padding-top: 90px;
 	/*width: 550px;*/
@@ -68,7 +121,7 @@ a:hover{
 }
 
 .why-choose-us{
-	width: 890px;
+	width: 980px;
 }
 .why-choose-us .single-block p{
 	font-size: 17px;
@@ -78,32 +131,35 @@ a:hover{
 	letter-spacing: 0.4px;
 }
 .upper-container{
-	padding-left: 270px;
+	float: right;
+	width: 1330px;
 	clear: both;
 }
 .lower-container{
 	clear: both;
+	float: left;
+	width: 1555px;
 }
 .little-about-us-content{
-	width: 50%;
+	width: 550px;
 	float: left;
 }
 .pool-img{
 	width: 50%;
 	float: left;
+	margin-left: 70px;
 }
 .pool-img img{
 	width: 100%;
 }
-.dog-img img{
-	width: 100%;
-}
+
 .dog-img{
-	width: 250px;
+	margin-top: -360px;
 	float: left
 }
 .why-choose-us{
 	float: left;
+	padding-left: 130px;
 }
 
 .section-two{
@@ -170,7 +226,7 @@ a:hover{
 	text-align: center;
 }
 .bottom-cat img{
-	margin-bottom: -40px;
+	margin-bottom: -42px;
 }
 
 .section-three{

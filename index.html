@@ -9,6 +9,7 @@
 <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
 
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.superslides.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
@@ -23,6 +24,32 @@
 	<header>
 		
 	</header>
+	<div class="section-zero">
+		<div id="slides">
+		  	<div class="slides-container">
+			    <div class="single-slide">
+			    	<img src="images/banner-slide.png">
+			    	<div class="slide-content">
+			    		<p>A passion for pet care</p>
+			    		<h1>Made real!</h1>
+			    		<a class="slide-button" href="#">Explore our facilities</a>
+			    	</div>
+			    </div>
+			    <div class="single-slide">
+			    	<img src="images/banner-slide.png">
+			    	<div class="slide-content">
+			    		<p>A passion for pet care</p>
+			    		<h1>Made real!</h1>
+			    		<a class="slide-button" href="#">Explore our facilities</a>
+			    	</div>
+			    </div>
+		  	</div>
+			 <nav class="slides-navigation">
+	    		<a href="#" class="next"><img src="images/next-arrow.png"></a>
+	    		<a href="#" class="prev"><img src="images/prev-arrow.png"></a>
+	  		</nav>
+		</div>
+	</div>
 	<div class="section-one clearfix" style="display:1none">
 		<div class="upper-container">
 			<div class="little-about-us">
@@ -364,6 +391,9 @@ $('.testimonial-carousel .owl-carousel').owlCarousel({
         }
     }
 })
+
+$('#slides').superslides();
+
 });
 
 
