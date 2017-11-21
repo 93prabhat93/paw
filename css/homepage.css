@@ -8,7 +8,10 @@ nav {
   margin: 0;
   padding: 0;
 }
-
+ a:focus{
+ 	text-decoration: none !important;
+ 	color: #fba934 !important;
+ }
 nav ul {
   display: flex;
   flex-direction: column;
@@ -882,6 +885,13 @@ a:hover{
 	margin: 40px 0;
 	text-decoration: none;
 }
+
+.follow-us-fb:focus{
+	color: #ffffff !important;
+}
+.follow-us-fb:hover{
+	color: #ffffff !important;
+}
 .instagram-images{
 	padding-top: 30px;
 }
@@ -1173,7 +1183,7 @@ nav {
 		width: 65%;
     	align-self: center;
     	padding: 30px;
-    	margin-top: 0px;
+    	margin-top: -130px;
 	}
 	.why-choose-us .single-block{
 		width: 50%;
