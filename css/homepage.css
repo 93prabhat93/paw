@@ -1,11 +1,140 @@
-/*body p{
-	font-family: 'Annie Use Your Telescope', cursive;
-}*/
-
 
 body p{
 	font-family: 'ACaslon-Pro';
 }
+
+/*menu-section starts*/
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+nav ul.opening {
+  display: block;
+    top: -54px;
+    position: relative;
+    z-index: 100;
+    background-color: #fba934;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+nav li { 
+	border-bottom: 1px solid #e5bb80;
+	margin: 0 10px;
+	}
+
+nav li:last-child { border-bottom: none; }
+
+nav a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus { background: #E4B363; }
+
+.site-nav--icon {
+  font-size: 1.4em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+}
+.menu-toggle {
+  position: absolute;
+  padding: 0.8em;
+  top: 60px;
+  right: .5em;
+  cursor: pointer;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: '';
+  display: block;
+  background: #fbbe34;
+  height: 3px;
+  width: 2em;
+  border-radius: 3px;
+  -webkit-transition: all ease-in-out 350ms;
+  transition: all ease-in-out 350ms;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before { display: none; }
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-1px) rotate(-90deg);
+  transform: translateY(-1px) rotate(-90deg);
+}
+.upper-header{
+	text-align: right;
+}
+.upper-header a, .upper-header a:hover{
+	color: #ffffff;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 13px;
+	padding-left: 5px;
+	display: inline-block;
+	margin-top: 5px;
+}
+.upper-header .fa{
+	color: #ffffff;
+	padding-right: 5px;
+}
+nav li a{
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 22px;
+	padding: 30px 15px;
+	color: #003f55;
+	text-transform: capitalize;
+}
+nav li a:hover{
+	font-weight: 600;
+}
+.logo{
+	position: relative;
+	z-index: 100;
+	top: -20px;
+	padding-left: 10px;
+}
+.upper-header{
+	height: 30px;
+    background-color: #68c7e8;
+}
+
+.lower-header{
+	height: 90px;
+}
+/*menu-section ends*/
+
+/*homepageslider-section starts*/
+
 
 .section-zero .single-slide{
 	display: flex!important;
@@ -52,9 +181,13 @@ body p{
 }
 .section-zero .slides-navigation a.next{
 	right: 30px;
+	background:none !important;
+	padding: 0px;
 }
 .section-zero .slides-navigation a.prev{
 	left: 30px;
+	background:none !important;
+	padding: 0px;
 }
 .section-zero .slides-pagination{
 	display: none;
@@ -64,6 +197,10 @@ body p{
 	/*width: 550px;*/
 	
 }
+
+/*homepage slider section ends*/
+
+/*about us section starts*/
 
 .section-one .container{
 	padding-left: 200px;
@@ -160,15 +297,24 @@ a:hover{
 .why-choose-us{
 	float: left;
 	padding-left: 130px;
+	margin-top: -120px;
 }
+
+.single-block img{
+	height: 38px;
+}
+
+/*about us section ends*/
+
+/*facilities section starts*/
 
 .section-two{
 	background-image: url("images/blue-background.png");
-	background-size: 100% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -90px;
 	position: relative;
-	/*padding-bottom: 200px;*/
+	background-position: 50%;
 }
 .section-two .facilities{
 	font-family: 'ACaslon-Pro';
@@ -229,6 +375,10 @@ a:hover{
 	margin-bottom: -42px;
 }
 
+/*facilities section ends*/
+
+/*blog-carousel section starts*/
+
 .section-three{
 	background-color: #a04c88;
 	padding-top: 190px;
@@ -245,9 +395,6 @@ a:hover{
 	
 }
 
-/*.owl-theme .owl-nav [class*=owl-]{
-	background: transparent !important;
-}*/
 .section-three .blog{
 	font-family: 'ACaslon-Pro';
 	font-size: 12px;
@@ -424,12 +571,21 @@ a:hover{
 	cursor: pointer;
 }
 
+/*blog-carousel section ends*/
+
+/*client talk section starts*/
+
 .section-four{
-	height: 982px;
+	padding-bottom: 100px;
 	background-image: url(images/pink-background.png);
 	background-size: 100% 100%;
+	background-repeat: no-repeat;
 
 }
+.blog-carousel .owl-carousel .owl-item img{
+	width: 100%;
+}
+
 .owl-carousel .owl-item img{
 	width: initial !important;
 }
@@ -480,7 +636,7 @@ a:hover{
 	font-size: 0px !important;
 }
 .section-four .owl-theme .owl-nav{
-	position: absolute;
+	
 	width: 100%;
 	text-align: center;
 }
@@ -536,6 +692,11 @@ a:hover{
 	top: 30px;
 	left: 0px;
 }
+
+/*client talk section ends*/
+
+/*facts and figures section starrts*/
+
 .section-five{
 	background-color: #66c6e8;
 	padding-bottom: 85px;
@@ -576,6 +737,18 @@ a:hover{
  .facts-figures-block .icon{
  	height: 100px;
  }
+
+
+/*facts and figures section ends*/
+
+/*contact us section starts*/
+
+ .section-six{
+ 	background-image: url(images/dog-map.png);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	padding-bottom: 100px;
+ }
 .section-six .left-block img{
 	width: 100%;
 }
@@ -584,7 +757,7 @@ a:hover{
 	float: left;
 }
 .section-six .right-block{
-	float: left;
+	float: right;
 	width: 55%;
 	padding-top: 100px;
 	padding-left: 100px;
@@ -654,6 +827,11 @@ a:hover{
 	width: 520px;
 	padding-bottom: 30px;
 }
+
+/*contact us section ends*/
+
+/*media section starts*/
+
 .section-seven{
 	background-color: #a04c88;
 }
@@ -732,11 +910,18 @@ a:hover{
 	margin-bottom: 40px;
 	text-decoration: none !important;
 }
+
+/*media section ends*/
+
+
+ /*footer section starts*/
+
 .section-eight {
 	background-image: url(images/footer-bg-image.png);
 	background-size: cover;
 	padding: 80px 0px 30px;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 .newsletter-block h1{
 	font-family: 'Annie Use Your Telescope', cursive;
@@ -836,4 +1021,443 @@ font-size: 17px;
 	font-size: 18px;
 	margin-bottom: 60px;
 	text-transform: uppercase;
+}
+.sub-footer{
+	background-color: #a04c88;
+}
+.sub-footer .copyright{
+	font-size: 14px;
+	color: #ffffff;
+	font-family: 'ACaslon-Pro';
+	float: left;
+	padding-top: 5px;
+    margin: 0px;
+}
+.sub-footer .developed{
+	font-size: 14px;
+	color: #ffffff;
+	font-family: 'ACaslon-Pro';
+	float: right;
+	padding-top: 5px;
+    margin: 0px;
+}
+
+.scroll-to-top{
+	position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 100;
+}
+
+/*footer section ends*/
+
+/*media query above 780px*/
+
+@media (min-width: 780px) {
+
+
+.menu-toggle { display: none; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav li {
+  border: none;
+}
+
+nav li a {
+  margin: 0;
+  border: none;
+ 
+}
+
+nav a:hover,  nav a:focus { background-color: rgba(255,255,255,.10); }
+
+.logo {
+  flex: 0 0 200px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+nav {
+ float: right;
+}
+
+}
+
+@media (max-width: 1800px){
+	.section-four .container{
+		width: 900px;
+	}
+	.section-six .right-block{
+		padding-top: 50px;
+	}
+	.contact-block .fa,.contact-block p,.contact-block a{
+		font-size: 30px !important;
+	}
+	.contact-block .fa{
+		width: 50px;
+		height: 50px;
+	}
+	.contact-description h1{
+		padding-top: 0px;
+	}
+	.upper-container{
+		width: auto;
+		padding-left: 500px;
+	}
+	.pool-img img{
+		width: 60%;
+	}
+	.why-choose-us{
+		padding-left: 70px;
+		margin-top: -20px;
+	}
+	.little-about-us-content{
+		width: 400px;
+	}
+	.lower-container{
+		width: 1435px;
+	}
+}
+
+@media (max-width: 1500px){
+	.section-four{
+		background-position: 50%;
+	}
+	.section-four .container{
+		width: 750px;
+	}
+	.upper-block{
+		text-align: center;
+	}
+	
+	.section-four{
+		background-image: url(images/pink-background-2.png);
+	}
+	.testimonial-carousel{
+		width: 100%;
+	}
+	.upper-container{
+		padding-left: 0px;
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.little-about-us-content{
+		width: 50%;
+	}
+	.pool-img{
+		width: 50%;
+		margin-left: 0px;
+	}
+	.pool-img img{
+		width: 100%;
+	}
+	.dog-img{
+		margin-top: 0px;
+		width: 35%;
+	}
+	.dog-img img{
+		width: 80%;
+	}
+	.lower-container{
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.why-choose-us{
+		width: 65%;
+    	align-self: center;
+    	padding: 30px;
+    	margin-top: 0px;
+	}
+	.why-choose-us .single-block{
+		width: 50%;
+	}
+	.testimonial-carousel .lower-block p{
+		padding: 55px 20px;
+	}
+}
+
+@media (max-width: 1200px){
+	.section-three .owl-prev{
+		left: 0px;
+	}
+	.section-three .owl-next{
+		right: 0px;
+	}
+	.lower-block{
+		width: 500px;
+		margin: 0 auto;
+	}
+	.testimonial-carousel .lower-block p{
+		width: 100% !important;
+	}
+	.lower-block:after{
+		right: -50px;
+	}
+	.lower-block:before{
+		left: -50px;
+	}
+	.contact-description p{
+		width: 100%;
+	}
+	.section-six{
+		background-position: 40%;
+	}
+	.scroll-to-top{
+		right: 30px;
+	    bottom: 100px;
+   }
+   .upper-container{
+   	width: 100%;
+   	padding-left: 20px;
+   	padding-right: 20px;
+   }
+   .why-choose-us{
+   	margin-top: -130px;
+   }
+   .profile-pic{
+		display: block !important;
+		margin: 0 auto;
+	}
+	.customer-data{
+		display: block !important;
+		text-align: center !important;
+	}	
+}
+
+@media (max-width: 992px){
+	.section-two{
+		background-image: url(images/blue-background-mobile.png);
+		background-size: cover;
+		margin-top: -50px;
+
+	}
+	.bottom-cat img {
+    	margin-bottom: -62px;
+	}
+	.section-four{
+		background-image: none;
+	}
+	.section-four .container{
+		width: initial;
+	}
+	.quick-links{
+		padding-left: 30px;
+		width: 300px;
+	}
+	.right-links{
+		padding-left: 20px;
+	}
+	.sub-footer .copyright{
+		float: none;
+		text-align: center;
+	
+	}
+	.sub-footer .developed{
+		float: none;
+		text-align: center;
+	}
+	.why-choose-us .single-block{
+		float: left;
+	}
+	.why-choose-us{
+		margin-top: -100px;
+	}
+	.dog-img img{
+		width: 100%;
+	}
+	.section-eight{
+		background-image: linear-gradient(0deg,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.3)),url(images/footer-bg-image.png);
+	}
+	nav li{
+		margin: 0px 0px;
+	}
+	
+}
+@media (max-width: 767px){
+	.slide-content p{
+		font-size: 30px;
+	}
+	.slide-content h1{
+		font-size: 80px;
+	}
+	.slide-button{
+		width: 250px;
+	}
+	.bottom-cat img{
+		margin: 0 auto;
+	    position: relative;
+	    bottom: -38px;
+	}
+	.blog-carousel{
+		width: 370px;
+		margin: 0 auto;
+	}
+	.lower-block{
+		width: 100%;
+	}
+	.lower-block:before{
+		left: 0px !important;
+		top: 10px;
+	}
+	.lower-block:after{
+		right: 0px !important
+	}
+	.section-header{
+		text-align: center !important;
+	}
+	.facebook-block{
+		text-align: center;
+		margin-bottom: 20px;
+    	border-bottom: 1px solid #fff;
+	}
+	.facebook-block img{
+		width: 100%;
+	}
+	.follow-us-fb{
+		margin: 40px auto;
+	}
+	.instagram-block{
+		text-align: center;
+	}
+	.facts-figures-block{
+		margin-bottom: 30px;
+	}
+	.section-eight{
+		background-position: 70%;
+	}
+	.social-media-icon .fa{
+		margin-right: 5px;
+	}
+	.newsletter-block{
+		float: none;
+		margin: 0 auto;
+	}
+	.quick-links{
+		width: 380px;
+		float: none;
+		margin: 0 auto;
+		padding-left: 0px;
+	}
+	.right-links{
+		padding-left: 30px;
+	}
+	.section-six{
+		background-image: none !important;
+		padding-bottom: 20px;
+	}
+	.section-six .left-block{
+		width: 100%;
+	}
+	.section-six .right-block{
+		width: 100%;
+		padding: 50px 20px;
+	}
+	nav li a{
+		padding: 5px 15px;
+	}
+	.scroll-to-top img{
+		width: 60px;
+	}
+	.lower-header .container{
+		padding: 0px;
+	}
+	.dog-img{
+		display: none;
+	}
+	.why-choose-us{
+		width: 100%;
+		margin-top: -50px;
+		text-align: center;
+	}
+	.little-about-us-content{
+		width: 100%;
+	}
+	.pool-img{
+		width: 100%;
+	}
+	.little-about-us a{
+		margin: 60px auto;
+	}
+	.section-two{
+		margin-top: 0px;
+	}
+	.slides-navigation{
+		position: relative !important;
+    z-index: 3;
+    bottom: 62px;
+    top: inherit !important;
+    width: 160px !important;
+    margin: 0 auto !important;
+	}
+}
+@media (max-width: 480px){
+	.col-md-6.offer-blocks{
+		width: 100% !important;
+	}
+	.facts-figures-block{
+		width: 100% !important;
+		margin-bottom: 30px;
+	}
+	.facts-figures-block .fact{
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ffffff;
+	}
+	.instagram-images img{
+		width: 100%;
+		height: 150px;
+		padding: 0 30px;
+	}
+	.newsletter-block{
+		width: 280px;
+	}
+	.email-address{
+		width: 280px;
+	}
+	.newsletter-form button{
+		top:11px;
+		right: -6px;
+	}
+	.quick-links{
+		width: 280px;
+	}
+	.block-content p{
+		font-size: 30px;
+		line-height: 36px;
+	}
+}
+
+@media (max-width: 420px){
+	.blog-carousel{
+		width: 270px;
+		margin: 0 auto;
+	}
+	.profile-pic{
+		width: 100% !important;
+	}
+	.testimonial-carousel .owl-carousel .owl-item img{
+		width: 70% !important;
+	}
+	.logo{
+		width: 120px;
+		top: -5px;
+	}
+	nav ul.opening {
+    	top: -34px;
+    }
+    .why-choose-us .single-block{
+		width: 100%;
+	}
+	.offer-blocks .block-content img{
+		width: 50px;
+	}
+	.left-links a, .right-links a{
+		margin-bottom: 20px;
+	}
 }
